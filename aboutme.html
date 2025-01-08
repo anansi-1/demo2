@@ -3,41 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <title>About me</title>
+    <link rel="stylesheet" href="./CSS/aboutme.css">
   </head>
   <body>
-    <header>
+<div class="outer-container">  <header>
       <div class="header-container">
-        <p class="logo"><a href="./home.html">Anansi Sime</a></p>
+        <div class="header-inner-container">
+             <div class="menu">
+            <div><div class="hamburger-menu">
+    <span>&#9776; </span></div> 
+  </div>
+          </div>
+          <div class="logo-container"> <p class="logo"><a href="./index.html">Anansi Sime</a></p></div>
+          
         <nav class="header-navigation">
           <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./aboutme.html">About me</a></li>
+            <li><a href="./index.html" >Home</a></li>
+            <li><a href="./aboutme.html" class="current">About me</a></li>
             <li><a href="./education.html">Education</a></li>
             <li><a href="./Certifications.html">Certifications</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
-      </div>
+      </div></div>
+       
     </header>
-    <main>
-      <div class="main-container">
+
+        <div class="container-menu"><nav class="hamburger-header-navigation">
+     <ul>
+              <li><a href="./index.html" class="current">Home</a></li>
+              <li><a href="./aboutme.html">About me</a></li>
+              <li><a href="./education.html">Education</a></li>
+              <li><a href="./Certifications.html">Certifications</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+  </nav></div>
+    <main class="main-container">
+      <div class="main-inner-container">
         <article>
-          <img
+          <div class="img-container"> <img
             src="./images/programming.jpg"
             alt="Hands typing on a keyboard"
-            width="400"
-          />
-          <h3>About me</h3>
-          <p>
+           
+          /></div>
+         
+          <p class="intro">
             I'm Anansi Sime, a 3rd year Software Engineering student pursuing a
             Bachelor's at Addis Ababa institute of Technology(AAiT).Dedicated to
             building a strong foundation in software development, I am exploring
             both coursework and practical projects to refine my skills.
           </p>
 
-          <p>
+          <p class="second-intro"> 
             With a passion for problem-solving, I am currently focusing on
             front-end development, actively learning HTML, CSS, and JavaScript
             to create dynamic and user-friendly applications. I’m also deeply
@@ -48,8 +67,8 @@
             skills and create impactful projects.
           </p>
         </article>
-        <section>
-          <h2>Interests</h2>
+        <section class="interests">
+          <h2 >Interests</h2>
           <ul>
             <li>
               <strong>Problem-Solving:</strong> I enjoy tackling challenging
@@ -68,7 +87,7 @@
             </li>
           </ul>
         </section>
-        <section>
+        <section class="hobbies">
           <h2>Hobbies</h2>
 
           <h3>Begena</h3>
@@ -78,7 +97,7 @@
             captures its calming tones:
           </p>
 
-          <figure>
+          <figure class="audio">
             <audio controls aria-label="Begena Classical Instrumental">
               <source
                 src="./audio/Orthodox_Begena_Classical_Instrumental_Mezmur.mp3"
@@ -91,40 +110,51 @@
             I also love being surrounded by nature, appreciating its beauty, and
             finding moments of calm in its presence.
           </p>
-          <figure>
-            <video controls muted aria-label="Nature Video" width="500">
+          <div class="video-container"> <figure class="video">
+            <video controls muted aria-label="Nature Video" width="400" loop autoplay>
               <source src="./videos/NatureVideo.mp4" type="video/mp4" />
             </video>
             <figcaption>Soothing visuals of nature's beauty</figcaption>
-          </figure>
+          </figure></div>
+         
         </section>
       </div>
     </main>
-    <footer>
-      <nav class="footer-navigation">
+       <footer>
+      <div class="footer-container">
+        <div class="footer-inner-container"><nav class="footer-navigation">
+          <p class="footer-copyright">
+          &copy;Anansi sime 2024. All rights reserved.
+        </p> 
         <ul class="footer-navlist">
           <li>
             <a
               href="https://www.linkedin.com/in/anansi-s-6084b6255/"
               target="_blank"
-              ><img src="./images/linkedin-box-line.png" alt="LinkedIn profile"
+              ><img src="./images/linkedin.png" alt="LinkedIn profile"
+              width="35px"
             /></a>
           </li>
           <li>
             <a href="https://github.com/anansi-1" target="_blank"
-              ><img src="./images/github-fill.png" alt="Github profile"
+              ><img src="./images/github.png" alt="Github profile"
+              width="35px"
             /></a>
           </li>
           <li>
             <a href="https://leetcode.com/u/anansi_1/ " target="_blank"
-              ><img src="./images/leetcode.png" alt="Leetcode profile"
+              ><img src="./images/leetcode.png" alt="Leetcode profile" width="35px"
             /></a>
           </li>
         </ul>
-        <p class="footer-copyright">
-          &copy;Anansi sime 2024. All rights reserved.
-        </p>
-      </nav>
-    </footer>
+       
+      </nav></div>
+         </div>
+     
+    </footer></div>
+
+  
+  <script src="./js/app.js"></script>
+  
   </body>
 </html>
