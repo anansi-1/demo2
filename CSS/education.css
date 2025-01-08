@@ -121,12 +121,15 @@ h3 {
 
 .image-container {
   position: relative;
-  width: 400px;
   text-align: center;
 }
 .image-container img {
-  width: 100%;
   transition: opacity 0.3s ease;
+}
+.project-image img{
+
+  max-width: 100%;
+  max-width: 300px;
 }
 
 .image-container .overlay {
